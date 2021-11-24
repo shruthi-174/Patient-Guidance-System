@@ -1,0 +1,42 @@
+extends base.pug
+
+block scripts 
+  script(src="/static/index.js") 
+
+block style 
+    style
+      include ../static/style.css
+
+
+block content 
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/PGS_logo.jpg")
+                
+                     
+            li #[a(href="/") Home]
+            li #[a(href="/about") About]
+            li #[a(href="/services") Services]
+            li #[a(href="/login") Login]
+            li #[a(href="/contact") Contact Us]
+            li #[a(href="/registration") Registration]
+    
+    
+    section#introSection
+        div Welcome to Patient Guidance System
+        div.small Health is Wealth
+
+    
+
+
+    section#sponsorsSection
+            h1 
+            div#sponsors
+                img(src= "/static/img/Devi_Ahilya_Vishwavidyalaya_Logo.png")
+                img(src= "/static/img/scsit_logo.jpeg")
+                img(src= "/static/img/meity.jpg")
+                img(src= "/static/img/contact1.jpg")
+block foot 
+    footer#footer
+        | Copyright © 2019 PatientGuidanceSystem.com | All Rights Reserved

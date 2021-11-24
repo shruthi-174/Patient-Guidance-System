@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts 
+  script(src="/static/index.js") 
+
+block style 
+    style
+      include ../static/style.css
+      include ../static/stylecontact.css
+      include ../static/styleabout.css
+
+block content 
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/PGS_logo.jpg")
+                
+                     
+            li #[a(href="/") Home]
+            li #[a(href="/about") About]
+            li #[a(href="/services") Services]
+            li #[a(href="/login") Login]
+            li #[a(href="/contact") Contact Us]
+            li #[a(href="/registration") Registration]
+    div.container 
+          
+        h1 About
+        p Patient Guidance System is the use of digital information and communication technologies, such as computers and mobile devices, to access health care services remotely. These may be technologies you use from home or that your doctor uses to improve or support health care services. We intend to make a reliable system, which is used as a way to provide better care for people suffering from various diseases by physicians, hospitals or both; it is also considered a way to significantly reduce the cost of treating health conditions.
+
+        p Our website will basically consist of the user, who will register himself / herself with the system initially by providing various       personal details i.e.,  name, gender, age, and email-id  information. Then, the user proceeds with a login ID and password. The main   objective is if the person is suffering from any disease, they can start a symptom assessment, by entering the symptoms. After every      symptom, we will check the intensity as well as the duration of your symptom. Based on the multiple symptoms given by the system, we will    suggest the appropriate disease. You can consult from specialized doctors.
+
+        p Patient Guidance System helps in easing the clinical problems from distance especially for distant rural communities. These services help patients save travel and wait time as they can consult a doctor at their own convenience and at the comfort of their home. The goal of this website, includes the following--
+
+        p ●	Make health care accessible to people who live in rural or isolated communities.
+        p ●	Individuals who are unable to leave their home for various reasons, such as physical or mental illness, will find our website a useful alternative.
+        p ●	Improve patient outreach and health outcomes.
+        p ●	 Provide access to medical specialists.
+        p ●	Improve communication and coordination of care among members of a health care team and a patient.
+        p ●	Eliminates the possibility of transmitting infectious diseases between patients and healthcare professionals, especially during this pandemic time.
+        p ●	It is difficult for rural hospitals to retain highly trained professionals. But our services provide an option of reducing the experts’ fees for the patient, and getting the required treatment on time.
+
+
+
+block foot 
+    footer#footer
+        | Copyright © 2019 PatientGuidanceSystem.com | All Rights Reserved

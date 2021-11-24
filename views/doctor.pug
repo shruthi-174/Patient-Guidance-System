@@ -1,0 +1,67 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Unknown Disease
+  block style 
+      style
+        include ../static/style.css
+        include ../static/stylecontact.css
+  style.
+    *{
+    box-sizing: border-box;
+    }
+    .container1{      
+        background-color: #00bfff38;
+        border: 2px solid black;
+        padding: 10px;
+        margin: 20px;
+        font-family:'Times New Roman', Times, serif;
+        border-radius: 10px;
+        }
+    h1{
+        text-align: center;
+    }
+    .container{
+        
+        font-family:'Times New Roman', Times, serif;
+        border: 2px solid rgb(37, 168, 185);
+        background-color: azure;
+        padding: 20px;
+        margin: 14px 19px;
+        border-radius: 20px;
+        width: 1100px;
+        height: fit-content;
+        text-align: left;  
+    }
+    
+nav#navbar
+  ul
+    #logo
+        img(src="/static/img/PGS_logo.jpg")
+    li #[a(href="/") Home]
+    li #[a(href="/about") About]
+    li #[a(href="/services") Services]
+    li #[a(href="/contact") Contact Us]
+    li #[a(href="/symtoms") Symtoms]
+    li #[a(href="/doctor") Doctor]
+    li #[a(href="/logout") Logout]
+
+
+  .container1
+    h1 Welcome To Doctor Section
+      .container
+        h3 Dr.&nbsp;Abc
+        h4 Expert in Pneumonia
+        p He is very Good Dr. for Pneumonia. He has more then 10 year of experience in medical science.
+      .container
+        h3 Dr.&nbsp;X
+        h4 Expert in Covid-19
+        p He is very Good Dr. for Pneumonia. He has more then 5 year of experience in medical science. He also researching in vaccine of covid-19 with WHO scientists.
+      .container
+        h3 Dr.(Mrs.)&nbsp;Sharma
+        h4 Expert in Child
+        p She is very Good Dr.&nbsp;She is Child specialist she is more then 15 year of experience in medical science
+
+footer#footer Copyright &copy; 2021 PatientGuidanceSystem.com | All Rights Reserved

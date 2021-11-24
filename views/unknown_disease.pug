@@ -1,0 +1,58 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Unknown Disease
+  block style 
+      style
+        include ../static/style.css
+        include ../static/stylecontact.css
+  style.
+    *{
+    box-sizing: border-box;
+    }
+    .container1{      
+        background-color: #00bfff38;
+        border: 2px solid black;
+        padding: 100px;
+        margin: 5px;
+        font-family:'Times New Roman', Times, serif;
+        border-radius: 10px;
+        }
+    h1{
+        text-align: center;
+    }
+    .container{
+        
+        font-family:'Times New Roman', Times, serif;
+        border: 2px solid rgb(37, 168, 185);
+        background-color: azure;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 20px;
+        width: 1100px;
+        text-align: left;  
+    }
+    
+nav#navbar
+  ul
+    #logo
+        img(src="/static/img/PGS_logo.jpg")
+    li #[a(href="/") Home]
+    li #[a(href="/about") About]
+    li #[a(href="/services") Services]
+    li #[a(href="/contact") Contact Us]
+    li #[a(href="/symtoms") Symtoms]
+    li #[a(href="/doctor") Doctor]
+    li #[a(href="/logout") Logout]
+
+
+  .container1
+    h1 Unknown Disease Section
+      .container
+        h3 Sorry
+        p Currently we are not supporting the disease that you have symtoms for, We are working very hard to include all Disease in this App.
+        h3 Thank You
+
+footer#footer Copyright &copy; 2021 PatientGuidanceSystem.com | All Rights Reserved

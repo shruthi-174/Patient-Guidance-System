@@ -1,0 +1,166 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Disply the main page
+  block style 
+    style
+      include ../static/style.css
+      include ../static/stylecontact.css
+  style.
+    *{
+    box-sizing: border-box;
+    }
+    .container{
+    background-color: antiquewhite;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    }
+    table input{
+    float: left;
+    }
+    .btn {
+    /* float: right; */
+    }
+    .container1{
+    border: 2px solid black;
+    background-color: cyan;
+    border-radius: 10px;
+    margin: 20px;
+    font-family:'Times New Roman', Times, serif;
+    width: 685px;
+    }
+    th, td {
+    padding: 15px 50px;
+    text-align: left;
+    }
+    h1{
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    }
+nav#navbar
+  ul
+    //#logo
+    //  img(src='PGS_logo.jpg')
+    #logo
+        img(src="/static/img/PGS_logo.jpg")
+    li #[a(href="/") Home]
+    li #[a(href="/about") About]
+    li #[a(href="/services") Services]
+    li #[a(href="/contact") Contact Us]
+    li #[a(href="/symtoms") Symtoms]
+    li #[a(href="/doctor") Doctor]
+    li #[a(href="/logout") Logout]
+.container
+  h1 Select Your Symptoms
+ 
+  form(action="/symtoms",method="post",class="myform") 
+    table
+      thead
+        tr
+          th Symptoms
+          th Severity Level
+          th Time Duration
+      tbody
+        tr
+          td
+            label(for='s1') Fever
+            input#s1(type='checkbox' name='Fever' checked)
+          td
+            label(for='sv1')
+            select#sv1(name='severity1')
+              option(value='none' selected='') none 
+              option(value='Low') Low
+              option(value='Medium') Medium
+              option(value='High') High
+          td
+            select#du1(name='duration1')
+              option(value='none' selected='') none 
+              option(value='3_days') 3 Days
+              option(value='7_days') 7 Days
+        tr
+          td
+            label(for='s2') Dry Cough
+            input#s2(type='checkbox' name='dry_cough' checked)
+          td
+            label(for='sv2')
+            select#sv2(name='severity2')
+              option(value='none' selected='') none 
+              option(value='Low') Low
+              option(value='Medium') Medium
+              option(value='High') High
+          td
+            select#du2(name='duration2')
+              option(value='none' selected='') none 
+              option(value='3_days') 3 Days
+              option(value='7_days') 7 Days
+        tr
+          td
+            label(for='s3') Wet Cough
+            input#s3(type='checkbox' name='wet_cough' checked)
+          td
+            label(for='sv3')
+            select#sv3(name='severity3')
+              option(value='none' selected='') none 
+              option(value='Low') Low
+              option(value='Medium') Medium
+              option(value='High') High
+          td
+            select#du3(name='duration3')
+              option(value='none' selected='') none 
+              option(value='3_days') 3 Days
+              option(value='7_days') 7 Days
+        tr
+          td
+            label(for='s4') Headache
+            input#s4(type='checkbox' name='headache' checked)
+          td
+            label(for='sv4')
+            select#sv4(name='severity4')
+              option(value='none' selected='') none 
+              option(value='Low') Low
+              option(value='Medium') Medium
+              option(value='High') High
+          td
+            select#du4(name='duration4')
+              option(value='none' selected='') none 
+              option(value='3_days') 3 Days
+              option(value='7_days') 7 Days
+        tr
+          td
+            label(for='s5') Difficulty in breathing
+            input#s5(type='checkbox' name='difficulty_in_breathing' checked)
+          td
+            label(for='sv5')
+            select#sv5(name='severity5')
+              option(value='none' selected='') none 
+              option(value='Low') Low
+              option(value='Medium') Medium
+              option(value='High') High
+          td
+            select#du5(name='duration5')
+              option(value='none' selected='') none 
+              option(value='3_days') 3 Days
+              option(value='7_days') 7 Days
+        tr
+          td
+            label(for='s1') Chest Pain
+            input#s1(type='checkbox' name='chest_pain' checked)
+          td
+            label(for='sv6')
+            select#sv6(name='severity6')
+              option(value='none' selected='') none 
+              option(value='Low') Low
+              option(value='Medium') Medium
+              option(value='High') High
+          td
+            select#du6(name='duration6')
+              option(value='none' selected='') none 
+              option(value='3_days') 3 Days
+              option(value='7_days') 7 Days
+    button(class="btn")
+            |Submit
+footer#footer Copyright &copy; 2021 PatientGuidanceSystem.com | All Rights Reserved
